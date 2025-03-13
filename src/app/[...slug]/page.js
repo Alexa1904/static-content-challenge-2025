@@ -5,12 +5,13 @@ import { marked } from 'marked';
 
 const getContent = (filePath) => {
   const fullPath = path.join(process.cwd(), 'content', filePath);
+  if (!fs.existsSync(fullPath)) {
+    return '404 Not Found';
+  }
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { content } = matter(fileContents);
   return marked(content);
 };
-
-
 const getTemplate = () => {
   const templatePath = path.join(process.cwd(), 'public', 'template.html');
   return fs.readFileSync(templatePath, 'utf8');
