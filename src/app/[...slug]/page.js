@@ -17,8 +17,8 @@ const getTemplate = () => {
   return fs.readFileSync(templatePath, 'utf8');
 };
 
-const Page = ({ params }) => {
-  const slug = params.slug.join('/');
+const Page = async ({ params }) => {
+  const slug = await  params.slug.join('/');
   const contentHtml = getContent(`${slug}/index.md`);
   const templateHtml = getTemplate();
   const finalHtml = templateHtml.replace('{{content}}', contentHtml);
