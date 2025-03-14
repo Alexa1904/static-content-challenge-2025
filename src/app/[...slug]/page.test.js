@@ -4,7 +4,6 @@ import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 import Page from './page';
-import FileNotFound from '@/Components/common/FileNotFound';
 
 jest.mock('fs');
 jest.mock('path');
@@ -44,7 +43,6 @@ describe('Page Component', () => {
 
   it('renders FileNotFound component when file does not exist', async () => {
     fs.existsSync.mockReturnValue(false);
-    jest.mock('./page', () => jest.fn(() => <FileNotFound />));
     const { container } = render(await Page(mockParams));
     expect(container.innerHTML).toContain('NOT FOUND');
   });

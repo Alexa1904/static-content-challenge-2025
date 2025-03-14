@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';// Import Link from react-router-dom
+import React from 'react';
 
 const Header = () => {
   return (

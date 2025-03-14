@@ -1,6 +1,6 @@
 import React from 'react';
-import { FolderIcon } from '../icons'; // Example import, adjust based on your project
-import Link from 'next/link'; // Import Link from react-router-dom
+import { FolderIcon } from '../icons';
+import Link from 'next/link';
 
 const MenuBar = ({contentFiles}) => {
   return (
