@@ -1,4 +1,4 @@
-This is a Content Management System internal Acme Co. project, where the management can easily visualize how
+This is a Content Management System internal Acme Co. project, where the management can easily visualize what
 a specific .md file looks like;
 
 ## Getting Started

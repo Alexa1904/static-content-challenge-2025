@@ -4,7 +4,7 @@ import Link from 'next/link'; // Import Link from react-router-dom
 
 const MenuBar = ({contentFiles}) => {
   return (
-    <div className="lg:w-1/3 w-full flex flex-col items-center bg-white p-4 rounded-xl">
+    <div className="lg:w-1/3 w-full flex flex-col items-center bg-white p-4 rounded-xl shadow-lg">
       <h1 className="w-full text-center text-xl border-b border-[#F9C001] pb-2 lg:py-2">
         Available paths
       </h1>
