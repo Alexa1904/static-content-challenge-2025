@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div className="w-full flex flex-col items-center bg-[#EBEBEC] min-h-screen">
+        <div className="w-full flex flex-col items-center bg-[#EBEBEC] min-h-screen text-[#343A3E]">
           <Header />
           <div className="w-11/12 bg-[#EBEBEC] flex flex-col lg:flex-row lg:justify-center gap-5 lg:gap-7">
             <MenuBar contentFiles={contentFiles} />
