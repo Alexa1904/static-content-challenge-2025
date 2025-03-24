@@ -9,7 +9,7 @@ const MenuBar = ({contentFiles}) => {
         Available paths
       </h1>
 
-      <ul className="lg:w-full flex flex-row gap-3 md:gap-6 flex-wrap lg:flex-col lg:gap-0 bg-white rounded-xl mt-3">
+      <ul style={{listStyle: 'none'}} className="lg:w-full flex flex-row gap-3 md:gap-6 flex-wrap lg:flex-col lg:gap-0 bg-white rounded-xl mt-3">
         {contentFiles.map((file) => (
           <li
             key={file}
